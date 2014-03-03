@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuraChat</title>
+    <link rel="stylesheet" href="/styles/app.css" />
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+  <!-- CONTAINER START-->
+  <div class="container">
+
+     <!-- HEADER -->
+     <header>
+      <div class="row">
+        <div class="logo large-4 medium-4 small-4 columns">
+          <a href="#">
+          <img class="logo_desktop" src="images/logov4.png" alt="Logo">
+          </a>
+          <a href="#">
+          <img class="logo_mobil" src="images/logo_mobil.png" alt="Logo-mobil">
+          </a>
+        </div>
+
+        <!-- NAV START-->
+        <nav class="large-8 medium-8 small-12 columns">
+          <div class="right toggle_menu"><a href="#">&#9776; Menu</a></div>
+          <ul class="right drop_down">
+            <li><a href="menu1" id='menu1Btn'>Produkt</a></li>
+            <li><a href="menu2" id='menu2Btn'>Team</a></li>
+            <li><a href="menu3" id='menu3Btn'>Priser</a></li>
+            <li><a href="menu4" id='menu4Btn'>Om CuraChat</a></li>
+            <li><a href="menu5" id='menu5Btn'>Kontakt</a></li>
+          </ul>
+        </nav>
+        <!-- NAV END -->
+      </div>
+     </header>
+
+      <!-- BANNER -->
+      <div class="banner cover">
+          <div class="row">
+            <div class="large-12 columns fade_in">
+              <img class="fade_in_img" src="images/cura-mand.png" alt="taleboble">
+              <div class="text-center"><h1 class="fade_in_h1">Digitale <br> rådgivnings-værktøjer</h1></div>
+            </div>
+          </div>
+      </div>
+      <!-- BANNER END -->
+
+      <!-- SALGSARGUMENTER -->
+      <section class="sales-arguments">
+        <div class="row" id="menu1">
+          <div class="large-6 medium-6 columns">
+            <%- partial("text/sales-argument-1.md") %>
+          </div>
+
+
+          <div class="large-6 medium-6 columns">
+            <%- partial("text/sales-argument-2.md") %>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="large-12 columns">
+            <a href="menu4" id='menu4Btn' class="button">Læs mere</a>
+          </div>
+        </div>
+
+      </section>
+      <!-- SALGSARGUMENTER END -->
+
+      <!-- STATEMENTS START -->
+      <section class="statements green">
+        <div class="row">
+            <div class="large-12 columns">
+              <%- partial("text/statements.md") %>
+            </div>
+          </div>
+      </section>
+      <!-- STATEMENTS END -->
+
+      <!-- STAFF -->
+      <section class="staff">
+        <div class="row" id="menu2">
+          <div class="large-12">
+            <%- partial("text/staff.md") %>
+          </div>
+
+          <br><br><br><br>
+
+          <div class="staff-images">
+
+            <div class="large-4 medium-4 columns">
+              <p><img src="images/jonasr.jpg" alt="Jonas Ravn"></p>
+              <p>Jonas Ravn</p>
+              <p class="link"><a href="mailto:jonas@cfdp.dk">jonas@cfdp.dk</a></p>
+            </div>
+
+            <div class="large-4 medium-4 columns">
+              <p><img src="images/jonass.jpg" alt="Jonas Sindal"></p>
+              <p>Jonas Sindal</p>
+
+              <p class="link"><a href="mailto:jonassindal@cfdp.dk">jonassindal@cfdp.dk</a></p>
+            </div>
+
+            <div class="large-4 medium-4 columns">
+              <p><img src="images/anni.jpg" alt="Anni"></p>
+              <p>Anni Marquard</p>
+              <p class="link"><a href="mailto:anni@cfdp.dk">anni@cfdp.dk</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- STAFF END -->
+
+    <!-- UDTALELSE -->
+    <section class="udtalelse cover2">
+      <div class="row">
+        <div class="large-12 columns">
+          <%- partial("text/testimonial.md") %>
+        </div>
+      </div>
+    </section>
+
+    <!-- UDTALELSE END -->
+
+    <!-- PRICES -->
+    <section class="price">
+      <div class="row" id="menu3">
+        <%- partial("text/price.ejs") %>
+      </div>
+
+     <!--  <div class="row">
+        <div class="large-12 columns">
+          <a href="menu4" id='menu5Btn' class="button">Kontakt os</a>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- PRICES END -->
+
+    <!-- INFO OM CHATTEN -->
+
+    <section class="info_chat">
+      <div class="row" id="menu4">
+        <div class="large-12 columns">
+          <%- partial("text/info_chat.md") %>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO OM CHATTEN END -->
+
+    <!-- KONTAKT START -->
+
+    <section class="contact">
+      <div class="row" id="menu5">
+        <div class="large-12 columns">
+          <%- partial("text/contact.md") %>
+          <form action="">
+            <div class="row">
+              <div class="large-6 medium-6 columns">
+                <label>
+                  <input type="text" placeholder="Navn" />
+                </label>
+              </div>
+              <div class="large-6 medium-6 columns">
+                <label>
+                  <input type="text" placeholder="Email" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>
+                  <textarea placeholder="Besked"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="button">Send</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTTER START-->
+    <footer class="sec-blue">
+      <div class="row">
+        <div class="large-12 columns ">
+          <img src="images/map_mark.png" alt="Map mark">
+          <p class="text-center">
+            Vesterport 3, 2 th
+            <br>
+            8000 Aarhus C
+            <br>
+            Danmark
+            <br>
+            +45 86 370 400
+          </p>
+        </div>
+        <hr>
+      </div>
+      <p class="text-center">© 2014 <span class="green_color">CuraChat</span> - Powered by <a class="cfdp" href="http://www.cfdp.dk" target="_blanket">CFDP</a></p>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="back-to-top">TIL TOPPEN</a>
+
+
+    </div>
+    <!-- WRAPPER END -->
+
+  </div>
+  <!-- CONTAINER END -->
+
+
+
+
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/BackToTop.js"></script>
+    <script src="js/scrolld.min.js"></script>
+    <script type="text/javascript" src="js/scrolld.js"></script>
+    <script type="text/javascript">$("[id*='Btn']").stop(true).on('click', function (e) {e.preventDefault();$(this).scrolld();})</script>
+  </body>
+</html>
