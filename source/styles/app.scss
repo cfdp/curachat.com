@@ -270,7 +270,7 @@ nav {
 }
 
 .staff {
-  margin: 50px 0;
+  padding: 100px 0;
   
   h1 {
     color: $primary-gray;
@@ -324,7 +324,7 @@ nav {
 }
 
 .price {
-   padding: 50px 0;
+   padding: 100px 0;
 
    p {
     width: 50%;
@@ -365,7 +365,7 @@ nav {
 .info_chat {
   width: 100%;
   background: $sec-blue;
-  padding: 70px 0;
+  padding: 100px 0;
 
     h1 {
       text-align: center;
@@ -375,21 +375,69 @@ nav {
 
     h3 {
       color: #fff;
-      border-bottom: 1px solid #fff;
       text-align: center;
-      padding-bottom: 20px
+      padding-bottom: 10px;
     }
 
     p {
-      color: $text-grey;
+      color: #ffffff;
       @media screen and (max-width: 640px) {
         margin-top: 30px;
       }
     }
+  .info1 {
+    padding-top: 50px;
 
-    .info {
-      margin-top: 50px;
+    h3 {
+      font-weight: 700;
+      text-align: left;
     }
+
+    p {
+      @media screen and (max-width: 869px) {
+        display: table;
+        width: 100%;
+        margin: 10px auto;
+      }
+    }
+
+    img {
+      @media screen and (max-width: 869px) {
+        display: table;
+        width: 100%;
+        margin: 10px auto;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .info2 {
+    padding-top: 80px;
+
+    h3 {
+      font-weight: 700;
+      text-align: left;
+    }
+
+    p {
+      @media screen and (max-width: 869px) {
+        display: table;
+        width: 100%;
+        margin: 10px auto;
+      }
+    }
+
+    img {
+      float: right;
+      
+      @media screen and (max-width: 869px) {
+        display: table;
+        float: none;
+        width: 100%;
+        margin: 30px auto;
+      }
+    }
+  }
 }
 
 
@@ -405,7 +453,7 @@ nav {
 }
 
 .contact {
-  padding: 70px 0;
+  padding: 100px 0;
 
   h1 {
     padding-bottom: 20px;
@@ -431,7 +479,7 @@ footer {
   }
 
   p {
-    color: $text-grey;
+    color: #ffffff;
   }
 
   .map {

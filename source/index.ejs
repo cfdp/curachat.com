@@ -15,7 +15,7 @@
      <!-- HEADER -->
      <header>
       <div class="row">
-        <div class="logo large-4 medium-4 small-4 columns">
+        <div class="logo large-2 medium-3 small-3 columns">
           <a href="#">
           <img class="logo_desktop" src="images/logov4.png" alt="Logo">
           </a>
@@ -25,11 +25,12 @@
         </div>
 
         <!-- NAV START-->
-        <nav class="large-8 medium-8 small-12 columns">
+        <nav class="large-9 medium-8 small-12 columns">
           <div class="right toggle_menu"><a href="#">&#9776; Menu</a></div>
-          <ul class="right drop_down">
+          <ul class="drop_down">
             <li><a href="menu1" id='menu1Btn'>Produkt</a></li>
             <li><a href="menu2" id='menu2Btn'>Team</a></li>
+            <li><a href="menu2" id='menu2Btn'>reference</a></li>
             <li><a href="menu3" id='menu3Btn'>Priser</a></li>
             <li><a href="menu4" id='menu4Btn'>Om CuraChat</a></li>
             <li><a href="menu5" id='menu5Btn'>Kontakt</a></li>
@@ -138,10 +139,29 @@
 
     <section class="info_chat">
       <div class="row" id="menu4">
-        <div class="large-6 columns">
+
+        <div class="large-12 columns">
           <%- partial("text/_info_chat.md") %>
         </div>
       </div>
+
+      <div class="row info1">
+        <div class="large-6 medium-6 columns"><img src="images/info1.png" alt="info"></div>
+        <div class="large-6 medium-6 columns">
+          <%- partial("text/_info_chat1.md") %>
+          <div class="button">Læs mere</div>
+        </div>
+      </div>
+      
+      <div class="row info2">
+        <div class="large-6 medium-6 columns">
+          <%- partial("text/_info_chat2.md") %>
+          <div class="button">Læs mere</div>
+        </div>
+        <div class="large-6 medium-6 columns"><img src="images/info1.png" alt="info"></div>
+      </div>
+        
+      
     </section>
 
     <!-- INFO OM CHATTEN END -->
