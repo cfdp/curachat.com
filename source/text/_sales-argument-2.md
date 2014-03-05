@@ -1,8 +1,3 @@
-## CfDP Chat - unik softwareløsning
+### Lorem ipsum.
 
--  Udviklet specielt til professionel online rådgivning
--  1-til-1 chat og gruppechat.
--  Moderationsfunktioner
--  Klienternes og rådgivernes anonymitet er sikret
--  Udvikles løbende under pædagogisk supervision
--  Open source: gennemsigtighed og samarbejde.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, suscipit, corrupti dolorum neque recusandae voluptas!

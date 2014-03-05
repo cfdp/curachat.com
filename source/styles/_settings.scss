@@ -8,6 +8,11 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "bower_components/foundation/scss/foundation/functions";
 
+// GOOGLE FONT
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+
 $primary-blue: #34495e;
 $green: #27AE61;
 $sec-blue: #393F4B;
@@ -45,7 +50,7 @@ $text-grey: #c3c3c3;
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: "Open Sans","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
 $body-font-weight: 100;
 // $body-font-style: normal;
 

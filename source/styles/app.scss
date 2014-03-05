@@ -38,10 +38,9 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .sec-blue {
@@ -81,10 +80,12 @@
 
 body {
   background: $body-color;
+  font-family: 'Open Sans'
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 700;
+  color: #393f4a;
 }
 
 h2 {
@@ -92,7 +93,7 @@ h2 {
 }
 
 h3 {
-
+  color: #333333;
 }
 
 h4 {
@@ -100,7 +101,7 @@ h4 {
 }
 
 p {
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .container {
@@ -114,7 +115,7 @@ header {
   z-index: 1000;
   font-weight: 300;
 
-
+  
 }
 
 .logo {
@@ -128,22 +129,22 @@ nav {
   ul {
     line-height: 101px;
     margin-bottom: 0;
-
+    
     @media screen and (max-width: 943px) {
       display: none;
       width: 100%;
       line-height: 2.6em;
       border-top: 1px solid $sec-blue;
-
+      
     }
-
+    
     li {
       display: inline-block;
       list-style-type: none;
       z-index: 999;
-
+      
       @media screen and (max-width: 943px) {
-        display: list-item;
+        display: list-item;       
       }
 
       a {
@@ -180,13 +181,13 @@ nav {
     line-height: 1.6em;
     margin-top: -62px;
   }
-
+  
   @media screen and (max-width: 640px) {
     margin-top: -35px;
   }
 
 }
-
+ 
 .logo_desktop {
   min-width: 250px;
 }
@@ -202,8 +203,7 @@ nav {
 
 .cover {
   height: 600px;
-  background: #478eca;
-  background: url(../images/header1.jpg);
+  background: url(../images/bg_cover.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -238,67 +238,67 @@ nav {
 }
 
 .sales-arguments {
-  padding: 50px 0;
-  // border-top: 2px solid $sec-blue;
-
-  h2 {
-    color: $primary-gray;
-  }
+  padding: 100px 0;
+  text-align: center;
 
   img {
-
+    padding: 20px 0;
   }
+  
+  h3 {
+    font-family: 'Lato';
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
 }
 
 .statements {
   width: 100%;
-  padding: 50px 0;
+  padding: 100px 0;
 
-  img {
-    border-radius: 2px;
-    margin-top: 19%;
-
-    @media screen and (max-width: 1024px) {
-      margin-top: 0px;
-    }
+  h1 {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
   }
 
-  h2 {
+  p {
+    padding-top: 5px;
     color: #ffffff;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
-
-    @media screen and (max-width: 1024px) {
-      text-align: center;
-    }
   }
 }
 
 .staff {
   margin: 50px 0;
-
-  h2 {
+  
+  h1 {
     color: $primary-gray;
+    text-align: center;
   }
-
+  
   h4 {
     color: $primary-gray;
+    text-align: center;
   }
 }
 
 .staff-images {
   p {
     text-align: center;
+    line-height: 10px;
   }
 
   img {
     border-radius: 50%;
+    display: table;
+    margin: 50px auto 20px;
   }
 }
 
 
 .udtalelse {
-
+  
   width: 100%;
   padding: 150px 0;
 
@@ -310,21 +310,26 @@ nav {
     text-shadow: 2px 2px #3a3a3a;
 
   }
+
+  cite {
+    color: #ffffff;
+  }
 }
 
 .cover2 {
-  background: url(../images/udtalelse.jpg);
+  background: url(../images/bg_cover2.jpg);
   background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .price {
    padding: 50px 0;
 
-   h2 {
-    color: $primary-gray;
-    margin-bottom: 15px;
-  }
+   p {
+    width: 50%;
+    margin: 10px auto;
+   }
 
   .pris-table {
     height: 400px;
@@ -360,11 +365,12 @@ nav {
 .info_chat {
   width: 100%;
   background: $sec-blue;
-  padding: 50px 0;
+  padding: 70px 0;
 
     h1 {
       text-align: center;
       color: #fff;
+      padding-bottom: 20px;
     }
 
     h3 {
@@ -391,15 +397,20 @@ nav {
   background: $green;
   padding: 10px 15px;
   box-shadow: 2px 2px #d4d4dd;
-  border: none;
+  border: none; 
 
   &:hover {
-    background: darken(#40B348, 10%);
+    background: darken($green, 10%);
   }
 }
 
 .contact {
-  padding: 50px 0;
+  padding: 70px 0;
+
+  h1 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
 
   input {
   }
@@ -411,6 +422,7 @@ nav {
 }
 
 
+
 footer {
   padding: 50px 0;
 
@@ -418,7 +430,7 @@ footer {
     display: table;
     margin: 0 auto 20px;
   }
-
+  
   h1 {
     color: #ffffff;
   }
@@ -432,6 +444,10 @@ footer {
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  .cfdp_icon {
+    margin-top: 10px;
   }
 }
 
@@ -447,38 +463,16 @@ footer {
     display: none;
 }
 
-.back-to-top:hover {
+.back-to-top:hover {    
     background-color: rgba(0, 0, 0, 0.80);
     color: #fff;
 }
 
 
-
-
 @media screen and (max-width: 640px) {
-
-
-  .top-bar {
-    padding: 0px;
-  }
-
-  .divider {
-    display: block;
-  }
 
   .img-wrapper {
     margin-top: -40px;
-  }
-
-  .col1 {
-    h2 {
-      font-size: 30px;
-      margin-top: 95px;
-    }
-  }
-
-  .row4 img {
-    margin-top: 30px;
   }
 
   .logo_desktop {
@@ -487,7 +481,7 @@ footer {
 
   .logo_mobil {
     display: block;
-    min-width: 160px;
+    min-width: 160px; 
   }
 }
 
