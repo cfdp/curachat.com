@@ -519,7 +519,7 @@ footer {
 .back-to-top {
     position: fixed;
     bottom: 2em;
-    right: 0px;
+    left: 0px;
     text-decoration: none;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.50);
@@ -530,7 +530,6 @@ footer {
 
 .back-to-top:hover {    
     background-color: rgba(0, 0, 0, 0.80);
-    color: #fff;
 }
 
 
