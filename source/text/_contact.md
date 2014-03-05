@@ -1,2 +1,2 @@
 # Kontakt os
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quod ipsam odit sapiente accusantium omnis.
+Skriv eller ring til Center for Digital Pægagogik for mere information. Vi træffes dagligt fra kl. 09.00 - 16.00.
