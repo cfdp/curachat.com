@@ -9,11 +9,10 @@ Hidden away in ```source/text``` folder. The text files is in either Markdown or
 ### How to run server or compile & deploy Curachat locally
 *npm, node.js, bower & harp.js is required.*
 
-1.  Fetch all required bower components ```bower install``
+1.  -  Fetch all required bower components ```bower install``
 
-2.  Run localhost server ```harp server source```
-
-or
-
-2.  Compile source to www  ```harp compile source www```
-    Deploay to curachat.com  ```. deploy.sh```
+2.  
+    -  Run localhost server ```harp server source``` 
+    -  Compile and Deploy
+        -  Compile source to www  ```harp compile source www```
+        -  Deploy www to curachat.com  ```. deploy.sh```
