@@ -127,10 +127,10 @@ header {
 nav {
   text-transform: uppercase;
   ul {
-    line-height: 101px;
+    line-height: 88px;
     margin-bottom: 0;
     
-    @media screen and (max-width: 943px) {
+    @media screen and (max-width: 1024px) {
       display: none;
       width: 100%;
       line-height: 2.6em;
@@ -143,7 +143,7 @@ nav {
       list-style-type: none;
       z-index: 999;
       
-      @media screen and (max-width: 943px) {
+      @media screen and (max-width: 1024px) {
         display: list-item;       
       }
 
@@ -176,7 +176,7 @@ nav {
     }
   }
 
-  @media screen and (max-width: 943px) {
+  @media screen and (max-width: 1024px) {
     display: block;
     line-height: 1.6em;
     margin-top: -62px;
@@ -189,7 +189,7 @@ nav {
 }
  
 .logo_desktop {
-  min-width: 250px;
+  min-width: 220px;
 }
 
 .logo_mobil {
