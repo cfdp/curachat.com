@@ -425,11 +425,6 @@ nav {
 
 footer {
   padding: 50px 0;
-
-  img {
-    display: table;
-    margin: 0 auto 20px;
-  }
   
   h1 {
     color: #ffffff;
@@ -439,15 +434,25 @@ footer {
     color: $text-grey;
   }
 
-  .cfdp {
+  .map {
+      display: table;
+      margin: 5px auto 25px;
+    }
+
+  .footer_link {
     color: $green;
     &:hover {
       text-decoration: underline;
     }
   }
 
-  .cfdp_icon {
-    margin-top: 10px;
+  .logos {
+    display: table;
+    margin: -10px auto;
+
+    img {
+      padding: 5px 10px;
+    }
   }
 }
 
