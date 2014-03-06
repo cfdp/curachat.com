@@ -100,9 +100,26 @@ p {
   font-weight: normal;
 }
 
+// BUTTON// BUTTON// BUTTON// BUTTON
+
+
+.button {
+  background: $green;
+  padding: 10px 15px;
+  border: none; 
+
+  &:hover {
+    background: darken($green, 10%);
+  }
+}
+
+// CONTAINER// CONTAINER// CONTAINER
+
 .container {
   width: 100%;
 }
+
+// HEADER// HEADER// HEADER// HEADER
 
 header {
   width: 100%;
@@ -119,6 +136,8 @@ header {
   margin-bottom: 5px;
   z-index: 999;
 }
+
+// NAV// NAV// NAV// NAV// NAV
 
 nav {
   text-transform: uppercase;
@@ -192,10 +211,14 @@ nav {
   display: none;
 }
 
+// BANNER CLASS// BANNER CLASS// BANNER CLASS
+
 .banner {
   width: 100%;
   padding: 50px 0;
 }
+
+// COVER 1// COVER 1// COVER 1// COVER 1
 
 .cover {
   height: 600px;
@@ -233,6 +256,8 @@ nav {
   }
 }
 
+// SALES-ARGUMENTS// SALES-ARGUMENTS// SALES-ARGUMENTS
+
 .sales-arguments {
   padding: 100px 0;
   text-align: center;
@@ -249,21 +274,26 @@ nav {
 
 }
 
+// STATEMENTS// STATEMENTS// STATEMENTS
+
 .statements {
   width: 100%;
   padding: 100px 0;
 
   h1 {
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+    text-align: center;
   }
 
   p {
     padding-top: 5px;
     color: #ffffff;
+    line-height: 2em;
   }
 }
+
+// STAFF// STAFF// STAFF// STAFF
 
 .staff {
   padding: 100px 0;
@@ -292,6 +322,8 @@ nav {
   }
 }
 
+// UDTALELSER// UDTALELSER// UDTALELSER
+
 
 .udtalelse {
   
@@ -312,12 +344,16 @@ nav {
   }
 }
 
+// COVER 2// COVER 2// COVER 2
+
 .cover2 {
   background: url(../images/bg_cover2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+// REFERENCER// REFERENCER// REFERENCER
 
 .referencer {
   width: 100%;
@@ -331,6 +367,8 @@ nav {
     padding-bottom: 30px;
   }
 }
+
+// PRICER// PRICER// PRICER// PRICER
 
 .price {
    padding: 100px 0;
@@ -370,6 +408,8 @@ nav {
     }
   }
 }
+
+// INFO CHAT// INFO CHAT// INFO CHAT
 
 .info_chat {
   width: 100%;
@@ -449,16 +489,7 @@ nav {
 }
 
 
-.button {
-  background: $green;
-  padding: 10px 15px;
-  box-shadow: 2px 2px #d4d4dd;
-  border: none; 
-
-  &:hover {
-    background: darken($green, 10%);
-  }
-}
+// CONTACT// CONTACT// CONTACT// CONTACT
 
 .contact {
   padding: 100px 0;
@@ -477,7 +508,7 @@ nav {
   }
 }
 
-
+// FOOTER// FOOTER// FOOTER// FOOTER
 
 footer {
   padding: 50px 0;
@@ -520,6 +551,8 @@ footer {
   }
 }
 
+// BACK-TO-TOP// BACK-TO-TOP// BACK-TO-TOP// BACK-TO-TOP
+
 .back-to-top {
     position: fixed;
     bottom: 2em;
@@ -536,6 +569,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.80);
 }
 
+// MEDIA-QUERY// MEDIA-QUERY// MEDIA-QUERY
 
 @media screen and (max-width: 640px) {
 
