@@ -100,6 +100,10 @@ p {
   font-weight: normal;
 }
 
+img {
+   max-width: 100%;
+}
+
 // BUTTON// BUTTON// BUTTON// BUTTON
 
 
@@ -224,13 +228,20 @@ nav {
 
 .cover {
   height: 600px;
-  background: url(../images/bg_cover.jpg);
-  background-attachment: fixed;
+  max-width: 100%;
+  background: url(../images/bg_cover.jpg) no-repeat fixed;
   background-size: cover;
-  background-repeat: no-repeat;
+  
+  @media screen and (max-width: 1000px) {
+  background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+  }
 
   @media screen and (max-width: 640px) {
     height: 450px;
+  }
+
+  @media screen and (max-width: 500px) {
+  background: url(../images/bg_cover_mobil.jpg) no-repeat fixed;
   }
 
   h1 {
@@ -376,6 +387,11 @@ nav {
     color: #fff;
     padding-bottom: 30px;
   }
+
+  img {
+    display: table;
+    margin: 30px auto;
+  }
 }
 
 // PRICER// PRICER// PRICER// PRICER
@@ -506,6 +522,10 @@ nav {
 
   h1 {
     padding-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
     text-align: center;
   }
 
