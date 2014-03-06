@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CuraChat</title>
     <link rel="stylesheet" href="/styles/app.css" />
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- build:js www/js/modernizr.js -->
+    <script src="/js/modernizr-bower.js"></script>
+    <!-- endbuild -->
   </head>
   <body>
 
@@ -133,7 +135,7 @@
         <div class="large-4 columns">
           <img src="images/cfdp_ref.png" alt="CFDP">
         </div>
-      
+
         <div class="large-4 columns">
           <img src="images/netstof_ref.png" alt="netstof">
         </div>
@@ -171,7 +173,7 @@
           <div class="button">Læs mere</div>
         </div>
       </div>
-      
+
       <div class="row info2">
         <div class="large-6 medium-6 columns">
           <%- partial("text/_info_chat2.md") %>
@@ -179,8 +181,8 @@
         </div>
         <div class="large-6 medium-6 columns"><img src="images/info1.png" alt="info"></div>
       </div>
-        
-      
+
+
     </section>
 
     <!-- INFO OM CHATTEN END -->
@@ -259,15 +261,13 @@
 
 
 
-
-    <script src="../bower_components/jquery/jquery.js"></script>
-    <script src="../bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/js/foundation-bower.js"></script>
     <script src="js/app.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/BackToTop.js"></script>
     <script src="js/scrolld.min.js"></script>
     <script type="text/javascript" src="js/scrolld.js"></script>
     <script type="text/javascript">$("[id*='Btn']").stop(true).on('click', function (e) {e.preventDefault();$(this).scrolld();})</script>
+  <!-- endbuild -->
   </body>
 </html>
