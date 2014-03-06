@@ -231,9 +231,17 @@ nav {
   max-width: 100%;
   background: url(../images/bg_cover.jpg) no-repeat fixed;
   background-size: cover;
+  
+  @media screen and (max-width: 1000px) {
+  background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+  }
 
   @media screen and (max-width: 640px) {
     height: 450px;
+  }
+
+  @media screen and (max-width: 500px) {
+  background: url(../images/bg_cover_mobil.jpg) no-repeat fixed;
   }
 
   h1 {
