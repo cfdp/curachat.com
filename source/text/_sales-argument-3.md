@@ -1,3 +1,4 @@
-### Lorem ipsum.
+### Moderations værktøjer
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, suscipit, corrupti dolorum neque recusandae voluptas!
+Det vigtigt at rådgiverne har et det rette udvalg af funktionalitet, så de kan skabe trygge rammer for samtalen. 
+

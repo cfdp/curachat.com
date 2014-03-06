@@ -1,3 +1,3 @@
-### Lorem ipsum.
+### Sikkerheden i top
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, suscipit, corrupti dolorum neque recusandae voluptas!
+Chatten kan afvikles via en sikker forbindelse, hvilket sikrer data mod overvågning og rådgiver-login kan sikres på IP-adresser.

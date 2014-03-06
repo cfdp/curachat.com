@@ -1,3 +1,3 @@
-### Lorem ipsum.
+### Responsivt layout
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, suscipit, corrupti dolorum neque recusandae voluptas!
+Flere og flere benytter sig af tablets og smartphones når det går på nettet. CuraChat er designet til at fungere på alle platforme.
