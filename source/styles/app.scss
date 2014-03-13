@@ -230,7 +230,10 @@ nav {
   height: 600px;
   max-width: 100%;
   background: url(../images/bg_cover.jpg) no-repeat fixed;
-  background-size: cover;
+   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   
   @media screen and (max-width: 1000px) {
   background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
