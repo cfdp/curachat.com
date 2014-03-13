@@ -1,4 +1,7 @@
 www
 .ruby-version
 bower_components
+source/js/*-bower.js
+
 .DS_store
+node_modules
