@@ -1,5 +1,6 @@
+
 @import "settings";
-@import "bower_components/foundation/scss/foundation";
+@import "foundation";
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
@@ -110,7 +111,7 @@ img {
 .button {
   background: $green;
   padding: 10px 15px;
-  border: none; 
+  border: none;
 
   &:hover {
     background: darken($green, 10%);
@@ -132,7 +133,7 @@ header {
   z-index: 1000;
   font-weight: 300;
 
-  
+
 }
 
 .logo {
@@ -148,22 +149,22 @@ nav {
   ul {
     line-height: 88px;
     margin-bottom: 0;
-    
+
     @media screen and (max-width: 1024px) {
       display: none;
       width: 100%;
       line-height: 2.6em;
       border-top: 1px solid $sec-blue;
-      
+
     }
-    
+
     li {
       display: inline-block;
       list-style-type: none;
       z-index: 999;
-      
+
       @media screen and (max-width: 1024px) {
-        display: list-item;       
+        display: list-item;
       }
 
       a {
@@ -202,13 +203,13 @@ nav {
     line-height: 1.6em;
     margin-top: -62px;
   }
-  
+
   @media screen and (max-width: 640px) {
     margin-top: -35px;
   }
 
 }
- 
+
 .logo_desktop {
   min-width: 220px;
 }
@@ -231,7 +232,7 @@ nav {
   max-width: 100%;
   background: url(../images/bg_cover.jpg) no-repeat fixed;
   background-size: cover;
-  
+
   @media screen and (max-width: 1000px) {
   background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
   }
@@ -278,7 +279,7 @@ nav {
   img {
     padding: 20px 0;
   }
-  
+
   h3 {
     // font-family: 'Lato';
     font-weight: 600;
@@ -310,12 +311,12 @@ nav {
 
 .staff {
   padding: 100px 0;
-  
+
   h1 {
     color: $primary-gray;
     text-align: center;
   }
-  
+
   h4 {
     color: $primary-gray;
     text-align: center;
@@ -339,7 +340,7 @@ nav {
 
 
 .udtalelse {
-  
+
   width: 100%;
   padding: 150px 0;
 
@@ -503,7 +504,7 @@ nav {
 
     img {
       float: right;
-      
+
       @media screen and (max-width: 869px) {
         display: table;
         float: none;
@@ -542,7 +543,7 @@ nav {
 
 footer {
   padding: 50px 0;
-  
+
   h1 {
     color: #ffffff;
   }
@@ -595,7 +596,7 @@ footer {
     display: none;
 }
 
-.back-to-top:hover {    
+.back-to-top:hover {
     background-color: rgba(0, 0, 0, 0.80);
 }
 
@@ -613,7 +614,7 @@ footer {
 
   .logo_mobil {
     display: block;
-    min-width: 160px; 
+    min-width: 160px;
   }
 }
 
