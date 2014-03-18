@@ -18,6 +18,10 @@ $(document).ready(function(){
   $(".toggle_menu a").click(function(){
     $(".drop_down").slideToggle("slow");
   });
+
+  $("[id*='Btn']").stop(true).on('click', function (e) {e.preventDefault();$(this).scrolld();})
 });
+
+
 
 
