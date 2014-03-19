@@ -128,11 +128,15 @@ img {
 
 header {
   width: 100%;
-  // border-bottom: solid 2px $primary-blue;
   background: $body-color;
+  position: fixed;
   z-index: 1000;
   font-weight: 300;
+  height: auto;
 
+  @media screen and (max-width: 1024px) {
+    position: relative;
+  }
 
 }
 
@@ -140,14 +144,27 @@ header {
   margin-top: 5px;
   margin-bottom: 5px;
   z-index: 999;
+
+.logo_desktop {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    min-width: 220px;
+  }
 }
+
+.logo_mobil {
+  display: none;
+  margin: 4px 0 5px 0;
+}
+
+
 
 // NAV// NAV// NAV// NAV// NAV
 
 nav {
   text-transform: uppercase;
   ul {
-    line-height: 88px;
+    line-height: 100px;
     margin-bottom: 0;
 
     @media screen and (max-width: 1024px) {
@@ -155,7 +172,8 @@ nav {
       width: 100%;
       line-height: 2.6em;
       border-top: 1px solid $sec-blue;
-
+      margin-left: 0;
+      margin-bottom: 20px;
     }
 
     li {
@@ -177,8 +195,13 @@ nav {
         &:hover {
           background: $primary-blue;
           color: #ffffff;
-          border-bottom: 3px solid #ffffff;
-          height: 88px;
+          // border-bottom: 3px solid #ffffff;
+          height: 95px;
+          
+          @media screen and (max-width: 1024px) {
+            height: auto;
+            border: none;
+          }
         }
       }
     }
@@ -188,7 +211,7 @@ nav {
 .toggle_menu {
   display: none;
   line-height: 92px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
 
   a {
@@ -205,18 +228,12 @@ nav {
   }
 
   @media screen and (max-width: 640px) {
-    margin-top: -35px;
+    margin-top: -44px;
   }
 
 }
 
-.logo_desktop {
-  min-width: 220px;
-}
 
-.logo_mobil {
-  display: none;
-}
 
 // BANNER CLASS// BANNER CLASS// BANNER CLASS
 
@@ -229,6 +246,7 @@ nav {
 
 .cover {
   height: 600px;
+  padding-top: 130px;
   max-width: 100%;
   background: url(../images/bg_cover.jpg) no-repeat fixed;
   background-size: cover;
@@ -237,7 +255,8 @@ nav {
   -o-background-size: cover;
   
   @media screen and (max-width: 1000px) {
-  background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+    background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+    padding-top: 50px;
   }
 
   @media screen and (max-width: 640px) {
@@ -257,7 +276,7 @@ nav {
     font-weight: 700;
 
       @media screen and (max-width: 640px) {
-        font-size: 30px;
+        font-size: 27px;
         padding: 0px 0px;
     }
 
@@ -265,11 +284,19 @@ nav {
 
 
   img {
-    width: 25%;
+    width: 28%;
     display: table;
     margin: 0 auto;
     min-width: 130px;
     margin-top: 10px;
+    
+    @media screen and (max-width: 800px) {
+      width: 35%;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 65%;
+    }
   }
 }
 
@@ -589,8 +616,8 @@ footer {
 
 .back-to-top {
     position: fixed;
-    bottom: 2em;
-    left: 0px;
+    bottom: 4em;
+    left: -2px;
     text-decoration: none;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.50);
