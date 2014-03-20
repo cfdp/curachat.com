@@ -289,13 +289,10 @@ nav {
 
   }
 
-
   img {
-    width: 28%;
     display: table;
     margin: 0 auto;
-    min-width: 130px;
-    margin-top: 10px;
+    padding-top: 20px;
     
     @media screen and (max-width: 800px) {
       width: 35%;
@@ -342,6 +339,10 @@ nav {
     color: #ffffff;
     line-height: 2em;
   }
+}
+
+.read_more_toggle {
+  display: none;
 }
 
 // STAFF// STAFF// STAFF// STAFF
@@ -430,12 +431,12 @@ nav {
     display: table;
     margin: 30px auto;
       opacity:0.6;
-      transition: opacity .2s ease-out;
-      -moz-transition: opacity .2s ease-out;
-      -webkit-transition: opacity .2s ease-out;
-      -o-transition: opacity .2s ease-out;
+      transition: opacity .4s ease-out;
+      -moz-transition: opacity .4s ease-out;
+      -webkit-transition: opacity .4s ease-out;
+      -o-transition: opacity .4s ease-out;
     &:hover {
-      opacity:0.8;
+      opacity:1;
     }
   }
 }
