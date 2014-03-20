@@ -16,26 +16,26 @@ jQuery(document).ready(function() {
     })
 });
 
-jQuery(document).ready(function() {
-    var offset = 100;
-    var duration = 1000;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.fade_in_h1').fadeOut(duration);
-        } else {
-            jQuery('.fade_in_h1').fadeIn(duration);
-        }
-    });
-});
+// jQuery(document).ready(function() {
+//     var offset = 100;
+//     var duration = 1000;
+//     jQuery(window).scroll(function() {
+//         if (jQuery(this).scrollTop() > offset) {
+//             jQuery('.fade_in_h1').fadeOut(duration);
+//         } else {
+//             jQuery('.fade_in_h1').fadeIn(duration);
+//         }
+//     });
+// });
 
-jQuery(document).ready(function() {
-    var offset = 80;
-    var duration = 1000;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.fade_in_img').fadeOut(duration);
-        } else {
-            jQuery('.fade_in_img').fadeIn(duration);
-        }
-    });
-});
+// jQuery(document).ready(function() {
+//     var offset = 80;
+//     var duration = 1000;
+//     jQuery(window).scroll(function() {
+//         if (jQuery(this).scrollTop() > offset) {
+//             jQuery('.fade_in_img').fadeOut(duration);
+//         } else {
+//             jQuery('.fade_in_img').fadeIn(duration);
+//         }
+//     });
+// });

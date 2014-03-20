@@ -257,13 +257,10 @@ nav {
   padding-top: 130px;
   max-width: 100%;
   background: url(../images/bg_cover.jpg) no-repeat fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-position: 50% 50%;
   
   @media screen and (max-width: 1000px) {
-    background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+    // background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
     padding-top: 50px;
   }
 
@@ -272,7 +269,7 @@ nav {
   }
 
   @media screen and (max-width: 500px) {
-  background: url(../images/bg_cover_mobil.jpg) no-repeat fixed;
+  // background: url(../images/bg_cover_mobil.jpg) no-repeat fixed;
   }
 
   h1 {
@@ -409,10 +406,8 @@ nav {
 // COVER 2// COVER 2// COVER 2
 
 .cover2 {
-  background: url(../images/bg_cover2.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../images/bg_cover2.jpg) fixed no-repeat;
+  background-position: 50% 50%;
 }
 
 // REFERENCER// REFERENCER// REFERENCER
