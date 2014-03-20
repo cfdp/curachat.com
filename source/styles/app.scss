@@ -118,6 +118,13 @@ img {
   }
 }
 
+.read_more {
+  background: #1e8448;
+  &:hover {
+    background: darken(#1e8448, 10%);
+  }
+}
+
 // CONTAINER// CONTAINER// CONTAINER
 
 .container {
@@ -318,9 +325,9 @@ nav {
 
 }
 
-// STATEMENTS// STATEMENTS// STATEMENTS
+// PRODUKT// PRODUKT// PRODUKT// PRODUKT
 
-.statements {
+.produkt {
   width: 100%;
   padding: 100px 0;
 
@@ -422,6 +429,14 @@ nav {
   img {
     display: table;
     margin: 30px auto;
+      opacity:0.6;
+      transition: opacity .2s ease-out;
+      -moz-transition: opacity .2s ease-out;
+      -webkit-transition: opacity .2s ease-out;
+      -o-transition: opacity .2s ease-out;
+    &:hover {
+      opacity:0.8;
+    }
   }
 }
 
