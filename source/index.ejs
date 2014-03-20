@@ -193,7 +193,7 @@
       <div class="row" id="menu6">
         <div class="large-12 columns">
           <%- partial("text/_contact.md") %>
-          <form action="php/mailform.php" method="post">
+          <form action="/php/mailform.php" method="post">
             <div class="row">
               <div class="large-4 medium-6 columns">
                 <label>
@@ -218,7 +218,7 @@
                 </label>
               </div>
             </div>
-            <div class="button">Send</div>
+            <input type="submit" id="submit" value="Send" class="button">
           </form>
         </div>
       </div>
