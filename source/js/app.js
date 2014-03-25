@@ -18,7 +18,7 @@ $(document).ready(function(){
   
 // TOGGLE MENU
   $(".toggle_menu a").click(function(){
-    $(".drop_down").slideToggle("slow");
+    $(".mobil").slideToggle("slow");
 });
 
 

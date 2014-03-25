@@ -170,6 +170,19 @@ header {
 
 nav {
   text-transform: uppercase;
+  
+  .desktop {
+     @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .mobil{
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
   ul {
     line-height: 100px;
     margin-bottom: 0;
@@ -225,7 +238,7 @@ nav {
   a {
     color: $primary-blue;
     &:hover {
-      color: lighten($primary-blue, 20%);
+      color: lighten($primary-blue, 10%);
     }
   }
 
@@ -256,11 +269,11 @@ nav {
   height: 600px;
   padding-top: 130px;
   max-width: 100%;
-  background: url(../images/bg_cover.jpg) no-repeat fixed;
+  background: url(../images/bg_cover.jpg);
+  background-attachment: fixed;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   
   @media screen and (max-width: 1000px) {
     background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
@@ -272,7 +285,7 @@ nav {
   }
 
   @media screen and (max-width: 500px) {
-  background: url(../images/bg_cover_mobil.jpg) no-repeat fixed;
+  background: url(../images/bg_cover_mobil.jpg) no-repeat scroll;
   }
 
   h1 {
@@ -421,8 +434,9 @@ nav {
   }
 
   @media screen and (max-width: 500px) {
-    background: url(../images/bg_cover2_mobil.jpg) no-repeat fixed;
-    background-size: cover; 
+    background: url(../images/bg_cover2_mobil.jpg) no-repeat scroll;
+    background-size: cover;
+    height: auto; 
   }
   // background: $sec-blue;
 

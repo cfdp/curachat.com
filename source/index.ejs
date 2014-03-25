@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CuraChat</title>
     <link rel="stylesheet" href="/styles/app.css" />
+    <link rel="stylesheet" href="/icons/icons.css">
     <!-- build:js www/js/modernizr.js -->
     <script src="/js/modernizr-bower.js"></script>
     <!-- endbuild -->
@@ -26,10 +27,9 @@
           </a>
         </div>
 
-        <!-- NAV START-->
-        <nav class="large-9 columns">
-          <div class="right toggle_menu"><a href="#">&#9776; Menu</a></div>
-          <ul class="drop_down">
+        <!-- NAV-DESKTOP START-->
+        <nav class="large-9 columns show-for-large-up">
+          <ul class="desktop">
             <li><a href="menu1" id='menu1Btn'>Produkt</a></li>
             <li><a href="menu2" id='menu2Btn'>Team</a></li>
             <li><a href="menu3" id='menu3Btn'>Partnere</a></li>
@@ -38,7 +38,21 @@
             <li><a href="menu6" id='menu6Btn'>Kontakt</a></li>
           </ul>
         </nav>
-        <!-- NAV END -->
+        <!-- NAV-DESKTOP END -->
+
+        <!-- NAV-MOLIBE START-->
+        <nav class="large-9 columns hide-for-large-up">
+          <div class="right toggle_menu"><a href="#"><span class="icon-toggle_img"></span></a></div>
+          <ul class="mobil">
+            <li><a href="menu1" id='menu1Btn'>Produkt</a></li>
+            <li><a href="menu2" id='menu2Btn'>Team</a></li>
+            <li><a href="menu3" id='menu3Btn'>Partnere</a></li>
+            <li><a href="menu4" id='menu4Btn'>Priser</a></li>
+            <li><a href="menu5" id='menu5Btn'>Om CuraChat</a></li>
+            <li><a href="menu6" id='menu6Btn'>Kontakt</a></li>
+          </ul>
+        </nav>
+        <!-- NAV-MOBILE END -->
       </div>
      </header>
 
