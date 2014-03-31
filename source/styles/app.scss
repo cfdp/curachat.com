@@ -467,11 +467,12 @@ nav {
   img {
     display: table;
     margin: 30px auto;
-      opacity:0.6;
-      transition: opacity .4s ease-out;
-      -moz-transition: opacity .4s ease-out;
-      -webkit-transition: opacity .4s ease-out;
-      -o-transition: opacity .4s ease-out;
+    opacity:0.6;
+    border-radius: 50%;
+    transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
     &:hover {
       opacity:1;
     }
@@ -528,6 +529,10 @@ nav {
       margin-bottom: 7px;
     }
   }
+}
+
+.pricing-table .bullet-item:last-child {
+  border-bottom: none;
 }
 
 // INFO CHAT// INFO CHAT// INFO CHAT
