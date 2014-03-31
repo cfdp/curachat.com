@@ -290,6 +290,7 @@ nav {
 
   @media screen and (max-width: 500px) {
   background: url(../images/bg_cover_mobil.jpg) no-repeat scroll;
+  background-position: 50% 50%;
   }
 
   h1 {
@@ -301,8 +302,10 @@ nav {
     font-weight: 700;
 
       @media screen and (max-width: 640px) {
-        font-size: 27px;
+        font-size:27px;
         padding: 0px 0px;
+        padding-top: 100px;
+
     }
 
   }
@@ -319,6 +322,7 @@ nav {
 
     @media screen and (max-width: 640px) {
       width: 45%;
+       display: none;
     }
   }
 }
