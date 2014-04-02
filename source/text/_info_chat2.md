@@ -1,3 +1,5 @@
-### Lorem ipsum.
+### Kan integreres overalt.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, maxime, magni reprehenderit laboriosam id at quia voluptates ipsa officiis atque est eligendi ipsum blanditiis? Excepturi, recusandae, explicabo deserunt eligendi dolorem iure error laborum culpa reprehenderit aut veniam cum voluptatem placeat ipsam eius in quaerat vitae eum aspernatur rerum commodi? Laborum, culpa, odio, sint rerum deleniti temporibus quaerat magnam voluptatem esse eveniet quod voluptate voluptatum dolores tempora molestias aut minus facilis.
+Selve indgangen til chatten kan let tilføjes jeres website, ligegyldigt hvilket system I bruger. Det eneste som kræves, er at I indsætter en stump kode, som vi giver jer. Den henter og viser login-formularen for jeres brugere, når I åbner chatten. 
+
+Login-vinduet kan tilpasses jeres visuelle identitet, så det kommer til at indgå som en naturlig del af jeres website.
