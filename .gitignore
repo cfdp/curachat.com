@@ -1,6 +1,4 @@
 www
 .ruby-version
-bower_components
 
 .DS_store
-node_modules
