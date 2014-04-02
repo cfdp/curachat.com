@@ -118,6 +118,13 @@ img {
   }
 }
 
+.read_more {
+  background: #1e8448;
+  &:hover {
+    background: darken(#1e8448, 10%);
+  }
+}
+
 // CONTAINER// CONTAINER// CONTAINER
 
 .container {
@@ -128,11 +135,15 @@ img {
 
 header {
   width: 100%;
-  // border-bottom: solid 2px $primary-blue;
   background: $body-color;
+  position: fixed;
   z-index: 1000;
   font-weight: 300;
+  height: auto;
 
+  @media screen and (max-width: 1024px) {
+    position: relative;
+  }
 
 }
 
@@ -140,14 +151,39 @@ header {
   margin-top: 5px;
   margin-bottom: 5px;
   z-index: 999;
+
+.logo_desktop {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    min-width: 220px;
+  }
 }
+
+.logo_mobil {
+  display: none;
+  margin: 4px 0 5px 0;
+}
+
 
 // NAV// NAV// NAV// NAV// NAV
 
 nav {
   text-transform: uppercase;
+  
+  .desktop {
+     @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .mobil{
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
   ul {
-    line-height: 88px;
+    line-height: 100px;
     margin-bottom: 0;
 
     @media screen and (max-width: 1024px) {
@@ -155,7 +191,9 @@ nav {
       width: 100%;
       line-height: 2.6em;
       border-top: 1px solid $sec-blue;
-
+      margin-left: 0;
+      margin-bottom: 20px;
+      padding-top: 20px;
     }
 
     li {
@@ -177,8 +215,13 @@ nav {
         &:hover {
           background: $primary-blue;
           color: #ffffff;
-          border-bottom: 3px solid #ffffff;
-          height: 88px;
+          // border-bottom: 3px solid #ffffff;
+          height: 95px;
+          
+          @media screen and (max-width: 1024px) {
+            height: auto;
+            border: none;
+          }
         }
       }
     }
@@ -188,13 +231,13 @@ nav {
 .toggle_menu {
   display: none;
   line-height: 92px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
 
   a {
     color: $primary-blue;
     &:hover {
-      color: lighten($primary-blue, 20%);
+      color: lighten($primary-blue, 10%);
     }
   }
 
@@ -205,18 +248,17 @@ nav {
   }
 
   @media screen and (max-width: 640px) {
-    margin-top: -35px;
+    margin-top: -44px;
   }
 
 }
 
-.logo_desktop {
-  min-width: 220px;
+
+.nav-active {
+  background: #000;
 }
 
-.logo_mobil {
-  display: none;
-}
+
 
 // BANNER CLASS// BANNER CLASS// BANNER CLASS
 
@@ -229,12 +271,17 @@ nav {
 
 .cover {
   height: 600px;
+  padding-top: 130px;
   max-width: 100%;
-  background: url(../images/bg_cover.jpg) no-repeat fixed;
+  background: url(../images/bg_cover.jpg);
+  background-attachment: fixed;
   background-size: cover;
-
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
   @media screen and (max-width: 1000px) {
-  background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+    background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+    padding-top: 50px;
   }
 
   @media screen and (max-width: 640px) {
@@ -242,7 +289,8 @@ nav {
   }
 
   @media screen and (max-width: 500px) {
-  background: url(../images/bg_cover_mobil.jpg) no-repeat fixed;
+  background: url(../images/bg_cover_mobil.jpg) no-repeat scroll;
+  background-position: 50% 50%;
   }
 
   h1 {
@@ -254,19 +302,28 @@ nav {
     font-weight: 700;
 
       @media screen and (max-width: 640px) {
-        font-size: 30px;
+        font-size:27px;
         padding: 0px 0px;
+        padding-top: 100px;
+
     }
 
   }
 
-
   img {
-    width: 25%;
     display: table;
     margin: 0 auto;
-    min-width: 130px;
-    margin-top: 10px;
+    min-width: 210px;
+    padding-top: 20px;
+    
+    @media screen and (max-width: 800px) {
+      width: 35%;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 45%;
+       display: none;
+    }
   }
 }
 
@@ -288,9 +345,9 @@ nav {
 
 }
 
-// STATEMENTS// STATEMENTS// STATEMENTS
+// PRODUKT// PRODUKT// PRODUKT// PRODUKT
 
-.statements {
+.produkt {
   width: 100%;
   padding: 100px 0;
 
@@ -305,6 +362,10 @@ nav {
     color: #ffffff;
     line-height: 2em;
   }
+}
+
+.read_more_toggle {
+  display: none;
 }
 
 // STAFF// STAFF// STAFF// STAFF
@@ -349,14 +410,14 @@ nav {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
-    text-shadow: 2px 2px #3a3a3a;
 
   }
 
   img {
     border-radius: 50%;
-    padding-top: 20px;
+    margin-top: 30px;
     margin-bottom: -20px;
+    box-shadow: 5px 5px 20px #222;
   }
 
   cite {
@@ -373,6 +434,20 @@ nav {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+  @media screen and (max-width: 1000px) {
+    background: url(../images/bg_cover2_tablet.jpg) no-repeat fixed;
+    background-size: cover; 
+  }
+
+  @media screen and (max-width: 500px) {
+    background: url(../images/bg_cover2_mobil.jpg) no-repeat scroll;
+    background-size: cover;
+    height: auto; 
+  }
+  // background: $sec-blue;
+
 }
 
 // REFERENCER// REFERENCER// REFERENCER
@@ -392,6 +467,15 @@ nav {
   img {
     display: table;
     margin: 30px auto;
+    opacity:0.6;
+    border-radius: 50%;
+    transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+    &:hover {
+      opacity:1;
+    }
   }
 }
 
@@ -404,6 +488,17 @@ nav {
     width: 50%;
     margin: 10px auto;
    }
+
+  .chat_add {
+    margin-top: 120px;
+    @media screen and (max-width: 869px) {
+      margin-top: 40px;
+    }
+  }
+
+  .chat_host {
+    margin-top: 20px;
+  }
 
   .pris-table {
     height: 400px;
@@ -434,6 +529,10 @@ nav {
       margin-bottom: 7px;
     }
   }
+}
+
+.pricing-table .bullet-item:last-child {
+  border-bottom: none;
 }
 
 // INFO CHAT// INFO CHAT// INFO CHAT
@@ -586,8 +685,8 @@ footer {
 
 .back-to-top {
     position: fixed;
-    bottom: 2em;
-    left: 0px;
+    bottom: 4em;
+    left: -2px;
     text-decoration: none;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.50);

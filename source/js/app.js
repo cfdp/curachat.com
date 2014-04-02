@@ -15,13 +15,20 @@ $(document).foundation({
 });
 
 $(document).ready(function(){
+  
+// TOGGLE MENU
   $(".toggle_menu a").click(function(){
-    $(".drop_down").slideToggle("slow");
-  });
-
-  $("[id*='Btn']").stop(true).on('click', function (e) {e.preventDefault();$(this).scrolld();})
+    $(".mobil").slideToggle("slow");
 });
 
 
+// READ MORE TOGGLE
+$(".read_more").click(function(){
+    $(".read_more_toggle").slideToggle("slow");  
+});
 
+// SLIDE TO DIV
+
+  $("[id*='Btn']").stop(true).on('click', function (e) {e.preventDefault();$(this).scrolld();})
+});
 
