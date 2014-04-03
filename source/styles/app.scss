@@ -273,11 +273,12 @@ nav {
   height: 600px;
   padding-top: 130px;
   max-width: 100%;
-  background: url(../images/bg_cover.jpg);
-  background-attachment: fixed;
+  background: url(../images/bg_cover.jpg) no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   
   @media screen and (max-width: 1000px) {
     background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
@@ -430,11 +431,13 @@ nav {
 // COVER 2// COVER 2// COVER 2
 
 .cover2 {
-  background: url(../images/bg_cover2.jpg);
-  background-attachment: fixed;
+  background: url(../images/bg_cover2.jpg) no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  min-height: 500px;
   
   @media screen and (max-width: 1000px) {
     background: url(../images/bg_cover2_tablet.jpg) no-repeat fixed;
@@ -450,9 +453,9 @@ nav {
 
 }
 
-// REFERENCER// REFERENCER// REFERENCER
+// PARTNERE// PARTNERE// PARTNERE
 
-.referencer {
+.partnere {
   width: 100%;
   padding: 100px 0;
   color: #ffffff;
@@ -464,17 +467,58 @@ nav {
     padding-bottom: 30px;
   }
 
-  img {
-    display: table;
-    margin: 30px auto;
-    opacity:0.6;
+  .partner_cyberhus {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+    display: block;
+    margin: 25px auto;
+    width: 303px;
+    height: 303px;
     border-radius: 50%;
-    transition: opacity .4s ease-out;
-    -moz-transition: opacity .4s ease-out;
-    -webkit-transition: opacity .4s ease-out;
-    -o-transition: opacity .4s ease-out;
+    background: image-url("../images/cyberhus_ref.png") 0 0 no-repeat;
     &:hover {
-      opacity:1;
+      background-position: 0 -303px;
+    }
+  }
+
+  .partner_netstof {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+    display: block;
+    margin: 25px auto;
+    width: 303px;
+    height: 303px;
+    border-radius: 50%;
+    background: image-url("../images/netstof_ref.png") 0 0 no-repeat;
+    &:hover {
+      background-position: 0 -303px;
+
+    }
+  }
+
+  .partner_orestad {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+    display: block;
+    margin: 25px auto;
+    width: 303px;
+    height: 303px;
+    border-radius: 50%;
+    background: image-url("../images/orestad_ref.png") 0 0 no-repeat;
+    &:hover {
+      background-position: 0 -303px;
     }
   }
 }

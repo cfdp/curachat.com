@@ -1,6 +1,6 @@
 (function ($) {
     $.fn.scrolld = function (options) {
-        var scrolldCustom = -88; // Set 'scrolldCustom' value here | Additional distance (+-) on scrolldTop & scrolldPre  
+        var scrolldCustom = -160; // Set 'scrolldCustom' value here | Additional distance (+-) on scrolldTop & scrolldPre  
         var scrolldNavBar = ''; // Set id name of fixed web navbar
         var scrolldMobileNavBar = ''; // Set id name of fixed mobile navbar
 
