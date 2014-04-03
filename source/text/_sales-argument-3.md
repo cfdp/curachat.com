@@ -1,4 +1,3 @@
 ### Sikkerhed i top
 
-Det er vigtigt at rådgiverne har et det rette udvalg af funktionalitet, så de kan skabe trygge rammer for samtalen. 
-
+Chatten kan afvikles via en sikker forbindelse, hvilket sikrer data mod overvågning og rådgiver-login kan sikres på IP-adresser.

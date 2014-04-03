@@ -1,3 +1,5 @@
-### Lorem ipsum.
+### Moderationsværktøjer.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, obcaecati, ratione culpa possimus vero mollitia laboriosam blanditiis beatae tenetur ea voluptatem nobis alias quaerat sint aliquid qui dolorum facilis aspernatur velit iste hic expedita labore quia totam fuga eaque consequuntur eligendi nulla veritatis cupiditate facere amet veniam odit sunt iure sit assumenda accusantium suscipit debitis incidunt ut quidem doloremque error deleniti eveniet autem! Perspiciatis, non beatae cupiditate at doloribus aut?
+Vores erfaring med chatrådgivning har gjort det muligt at udvikle tilpassede funktioner, der sikrer den bedst mulige chatrådgivning. 
+
+Der kan f.eks. opstå situationer i en gruppechat, hvor det kan være en fordel, at rådgiverne kan "hviske" til en bruger. I en chat med potentielt sårbare unge er det imidlertid ikke en god idé at lade de unge hviske til hinanden, så denne mulighed har de som udgangspunkt ikke.
