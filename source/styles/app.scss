@@ -480,6 +480,11 @@ nav {
     height: 303px;
     border-radius: 50%;
     background: image-url("../images/cyberhus_ref.png") 0 0 no-repeat;
+    
+    @media screen and (max-width: 1024px) {
+      background-position: 0 -303px;
+    }
+
     &:hover {
       background-position: 0 -303px;
     }
@@ -498,6 +503,11 @@ nav {
     height: 303px;
     border-radius: 50%;
     background: image-url("../images/netstof_ref.png") 0 0 no-repeat;
+
+    @media screen and (max-width: 1024px) {
+      background-position: 0 -303px;
+    }
+
     &:hover {
       background-position: 0 -303px;
 
@@ -517,6 +527,11 @@ nav {
     height: 303px;
     border-radius: 50%;
     background: image-url("../images/orestad_ref.png") 0 0 no-repeat;
+    
+    @media screen and (max-width: 1024px) {
+      background-position: 0 -303px;
+    }
+
     &:hover {
       background-position: 0 -303px;
     }
