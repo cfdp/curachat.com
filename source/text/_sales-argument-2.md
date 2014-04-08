@@ -1,3 +1,3 @@
 ### Pædagogisk værktøj
 
-Det er vigtigt at rådgiverne har et det rette udvalg af funktionalitet, så de kan skabe trygge rammer for samtalen. 
+Udover afstand og anonymitet besidder digital rådgivning en stor styrke i sine alsidige muligheder for deltagelse. 

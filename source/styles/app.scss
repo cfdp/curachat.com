@@ -228,6 +228,21 @@ nav {
   }
 }
 
+.active {
+  background: $primary-blue;
+  color: #ffffff;
+  height: 95px;
+
+  a {
+    color: #ffffff;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    border: none;
+  }
+}
+
 .toggle_menu {
   display: none;
   line-height: 92px;
@@ -252,12 +267,6 @@ nav {
   }
 
 }
-
-
-.nav-active {
-  background: #000;
-}
-
 
 
 // BANNER CLASS// BANNER CLASS// BANNER CLASS
@@ -286,13 +295,17 @@ nav {
   }
 
   @media screen and (max-width: 640px) {
-    height: 450px;
+    display: none;
   }
 
-  @media screen and (max-width: 500px) {
-  background: url(../images/bg_cover_mobil.jpg) no-repeat scroll;
-  background-position: 50% 50%;
-  }
+  // @media screen and (max-width: 640px) {
+  //   height: 450px;
+  // }
+
+  // @media screen and (max-width: 500px) {
+  // background: url(../images/bg_cover_mobil.jpg) no-repeat scroll;
+  // background-position: 50% 50%;
+  // }
 
   h1 {
     margin-top: 10px;
@@ -302,12 +315,12 @@ nav {
     text-transform: uppercase;
     font-weight: 700;
 
-      @media screen and (max-width: 640px) {
-        font-size:27px;
-        padding: 0px 0px;
-        padding-top: 100px;
+    //   @media screen and (max-width: 640px) {
+    //     font-size:27px;
+    //     padding: 0px 0px;
+    //     padding-top: 100px;
 
-    }
+    // }
 
   }
 
@@ -317,22 +330,26 @@ nav {
     min-width: 210px;
     padding-top: 20px;
     
-    @media screen and (max-width: 800px) {
-      width: 35%;
-    }
+    // @media screen and (max-width: 800px) {
+    //   width: 35%;
+    // }
 
-    @media screen and (max-width: 640px) {
-      width: 45%;
-       display: none;
-    }
+    // @media screen and (max-width: 640px) {
+    //   width: 45%;
+    //    display: none;
+    // }
   }
 }
 
 // SALES-ARGUMENTS// SALES-ARGUMENTS// SALES-ARGUMENTS
 
 .sales-arguments {
-  padding: 100px 0;
+  padding: 192px 0 100px 0;
   text-align: center;
+
+   @media screen and (max-width: 640px) {
+    padding: 50px 0 100px 0;
+  }
 
   img {
     padding: 20px 0;
@@ -372,7 +389,11 @@ nav {
 // STAFF// STAFF// STAFF// STAFF
 
 .staff {
-  padding: 100px 0;
+  padding: 192px 0 100px 0;
+
+  @media screen and (max-width: 640px) {
+    padding: 50px 0 100px 0;
+  }
 
   h1 {
     color: $primary-gray;
@@ -404,14 +425,22 @@ nav {
 .udtalelse {
 
   width: 100%;
-  padding: 150px 0;
+  padding: 242px 0 100px 0;
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 
   p {
     color: #fff;
     text-align: center;
     font-size: 30px;
     font-weight: 500;
-
+    font-style: italic;
+    
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
   }
 
   img {
@@ -419,6 +448,10 @@ nav {
     margin-top: 30px;
     margin-bottom: -20px;
     box-shadow: 5px 5px 20px #222;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: -5px;
+    }
   }
 
   cite {
@@ -457,8 +490,12 @@ nav {
 
 .partnere {
   width: 100%;
-  padding: 100px 0;
+  padding: 192px 0 100px 0;
   color: #ffffff;
+
+  @media screen and (max-width: 640px) {
+    padding: 50px 0 100px 0;
+  }
 
 
   h1 {
@@ -514,6 +551,11 @@ nav {
     }
   }
 
+  .space {
+    height: 200px;
+    padding-top: 200px;
+  }
+
   .partner_orestad {
     -o-transition:.5s;
     -ms-transition:.5s;
@@ -541,7 +583,11 @@ nav {
 // PRICER// PRICER// PRICER// PRICER
 
 .price {
-   padding: 100px 0;
+   padding: 192px 0 100px 0;
+
+   @media screen and (max-width: 640px) {
+    padding: 50px 0 100px 0;
+  }
 
    p {
     width: 50%;
@@ -598,7 +644,11 @@ nav {
 
 .info_chat {
   width: 100%;
-  padding: 100px 0;
+  padding: 192px 0 100px 0;
+
+  @media screen and (max-width: 640px) {
+    padding: 50px 0 100px 0;
+  }
 
     h1 {
       text-align: center;
@@ -677,7 +727,11 @@ nav {
 // CONTACT// CONTACT// CONTACT// CONTACT
 
 .contact {
-  padding: 100px 0;
+  padding: 192px 0 100px 0;
+
+  @media screen and (max-width: 640px) {
+    padding: 50px 0 100px 0;
+  }
 
   h1 {
     padding-bottom: 20px;

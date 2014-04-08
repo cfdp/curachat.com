@@ -46,7 +46,7 @@
 
             $('html, body').stop().animate({
                 'scrollTop': scroll_top
-            }, 700, 'swing', function () {
+            }, 100, 'swing', function () {
                 window.location.hash = '#'+hash;
             });
         })
