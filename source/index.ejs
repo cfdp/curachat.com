@@ -29,7 +29,7 @@
         <!-- NAV-DESKTOP START-->
         <nav class="large-9 columns show-for-large-up" data-magellan-expedition>
           <ul class="desktop">
-            <li data-magellan-arrival="produkt"><a href="#produkt">Services</a></li>
+            <li data-magellan-arrival="services"><a href="#services">Services</a></li>
             <li data-magellan-arrival="team"><a href="#team">Team</a></li>
             <li data-magellan-arrival="partnere"><a href="#partnere">Partnere</a></li>
             <li data-magellan-arrival="priser"><a href="#priser">Priser</a></li>
@@ -43,7 +43,7 @@
         <nav class="large-9 columns hide-for-large-up">
           <div class="right toggle_menu"><a href="#"><span class="icon-toggle_img"></span></a></div>
           <ul class="mobil">
-            <li data-magellan-arrival="produkt"><a href="#produkt">Services</a></li>
+            <li data-magellan-arrival="services"><a href="#services">Services</a></li>
             <li data-magellan-arrival="team"><a href="#team">Team</a></li>
             <li data-magellan-arrival="partnere"><a href="#partnere">Partnere</a></li>
             <li data-magellan-arrival="priser"><a href="#priser">Priser</a></li>
@@ -60,53 +60,54 @@
       <div class="banner cover">
           <div class="row">
               <div class="text-center small-8 small-centered large-10 large-centered columns"><h1>CuraChat bygger på 10 års praksiserfaring. Vi kalder det nærhed på afstand</h1></div>
-<!--               <img class="large-4 medium-4 columns end"src="images/taleboble.svg" alt="taleboble"> -->
+              <!-- <img class="large-4 medium-4 columns end"src="images/taleboble.svg" alt="taleboble"> -->
           </div>
       </div>
       <!-- BANNER END -->
 
-      <!-- SALGSARGUMENTER -->
-      <a name="produkt"></a>
-      <section data-magellan-destination="produkt" class="sales-arguments">
+      <!-- SERVICES START -->
+      <a name="services"></a>
+      <section data-magellan-destination="services" class="services">
         <div class="row">
         <h1>Digital rådgivning</h1>
           <div class="large-4 medium-4 columns">
             <img src="images/platform.svg" alt="Platforme ikon">
-            <%- partial("text/_sales-argument-1.md") %>
+            <%- partial("text/_services1.md") %>
           </div>
 
 
           <div class="large-4 medium-4 columns">
             <img src="images/heart.svg" alt="Hjerte ikon">
-            <%- partial("text/_sales-argument-2.md") %>
+            <%- partial("text/_services2.md") %>
           </div>
 
           <div class="large-4 medium-4 columns">
             <img src="images/lock.svg" alt="Hængelås ikon">
-            <%- partial("text/_sales-argument-3.md") %>
+            <%- partial("text/_services3.md") %>
           </div>
         </div>
-        <div class="arrow_down"><a id='useBtn' class='produkt' href='#produkt'><img src="../images/arrow_down.svg" alt="arrow_down"></a></div>
-      </section>
-      <!-- SALGSARGUMENTER END -->
 
-      <!-- PRODUKT START -->
+        <!-- ARROW DOWN -->
+        <div class="arrow_down">
+          <a id='useBtn' class='produkt' href='#produkt'><img src="../images/arrow_down.svg" alt="arrow_down"></a>
+        </div>
+      </section>
 
       <section class="produkt green" id='use' class='produkt'>
         <div class="row">
             <div class="large-12 columns">
-              <%- partial("text/_produkt.md") %>
+              <%- partial("text/_services_text.md") %>
             </div>
           </div>
       </section>
-      <!-- PRODUKT END -->
+      <!-- SERVICES SLUT -->
 
-      <!-- STAFF -->
+      <!-- TEAM -->
        <a name="team"></a>
        <section data-magellan-destination="team" class="staff">
         <div class="row">
           <div class="large-12">
-            <%- partial("text/_staff.md") %>
+            <%- partial("text/_team.md") %>
           </div>
 
           <div class="staff-images">
@@ -134,7 +135,7 @@
           </div>
         </div>
       </section>
-    <!-- STAFF END -->
+    <!-- TEAM END -->
 
     <!-- UDTALELSE -->
     <section class="udtalelse cover2">
