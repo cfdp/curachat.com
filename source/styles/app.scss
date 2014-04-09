@@ -200,6 +200,7 @@ nav {
       display: inline-block;
       list-style-type: none;
       z-index: 999;
+      margin-right: -2px;
 
       @media screen and (max-width: 1024px) {
         display: list-item;
@@ -279,7 +280,7 @@ nav {
 // COVER 1// COVER 1// COVER 1// COVER 1
 
 .cover {
-  height: 600px;
+  height: 650px;
   padding-top: 130px;
   max-width: 100%;
   background: url(../images/bg_cover.jpg) no-repeat fixed;
@@ -288,10 +289,12 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position-y: 100px; 
   
-  @media screen and (max-width: 1000px) {
-    background: url(../images/bg_cover_tablet.jpg) no-repeat fixed;
+  @media screen and (max-width: 1024px) {
+    background: url(../images/bg_cover_tablet.jpg) no-repeat;
     padding-top: 50px;
+    height: 500px;
   }
 
   @media screen and (max-width: 640px) {
@@ -308,26 +311,24 @@ nav {
   // }
 
   h1 {
-    margin-top: 10px;
+    margin-top: 100px;
     font-size: 50px;
     text-shadow: 2px 2px #3a3a3a;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
 
-    //   @media screen and (max-width: 640px) {
-    //     font-size:27px;
-    //     padding: 0px 0px;
-    //     padding-top: 100px;
-
-    // }
+    @media screen and (max-width: 1024px) {
+        font-size:40px;
+        margin-top: 50px;
+    }
 
   }
 
   img {
     display: table;
     margin: 0 auto;
-    min-width: 210px;
+    max-width: 350px;
     padding-top: 20px;
     
     // @media screen and (max-width: 800px) {
@@ -344,11 +345,19 @@ nav {
 // SALES-ARGUMENTS// SALES-ARGUMENTS// SALES-ARGUMENTS
 
 .sales-arguments {
-  padding: 192px 0 100px 0;
+  padding: 150px 0 0 0;
   text-align: center;
 
-   @media screen and (max-width: 640px) {
-    padding: 50px 0 100px 0;
+  h1 {
+    padding-bottom: 50px;
+  }
+
+   @media screen and (max-width: 1024px) {
+    padding: 50px 0 0 0;
+  }
+
+    @media screen and (max-width: 640px) {
+    padding: 20px 0 0 0;
   }
 
   img {
@@ -361,6 +370,32 @@ nav {
     padding-bottom: 10px;
   }
 
+.arrow_down {
+    height: 40px;
+    width: 60px;
+    background-color: $green;
+    display: table;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+
+    img {
+      padding: 0;
+      margin-top: 10px;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+      &:hover {
+
+        margin-top: 15px;
+      }
+    }
+  }
 }
 
 // PRODUKT// PRODUKT// PRODUKT// PRODUKT
@@ -368,6 +403,10 @@ nav {
 .produkt {
   width: 100%;
   padding: 100px 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 50px 0 0 0;
+  }
 
   h1 {
     color: #ffffff;
@@ -389,9 +428,9 @@ nav {
 // STAFF// STAFF// STAFF// STAFF
 
 .staff {
-  padding: 192px 0 100px 0;
+  padding: 150px 0 100px 0;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     padding: 50px 0 100px 0;
   }
 
@@ -425,7 +464,7 @@ nav {
 .udtalelse {
 
   width: 100%;
-  padding: 242px 0 100px 0;
+  padding: 190px 0 100px 0;
 
   @media screen and (max-width: 640px) {
     display: none;
@@ -490,10 +529,10 @@ nav {
 
 .partnere {
   width: 100%;
-  padding: 192px 0 100px 0;
+  padding: 150px 0 100px 0;
   color: #ffffff;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     padding: 50px 0 100px 0;
   }
 
@@ -513,17 +552,17 @@ nav {
     transition:.5s;
     display: block;
     margin: 25px auto;
-    width: 303px;
-    height: 303px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     background: image-url("../images/cyberhus_ref.png") 0 0 no-repeat;
     
     @media screen and (max-width: 1024px) {
-      background-position: 0 -303px;
+      background-position: 0 -270px;
     }
 
     &:hover {
-      background-position: 0 -303px;
+      background-position: 0 -270px;
     }
   }
 
@@ -536,46 +575,84 @@ nav {
     transition:.5s;
     display: block;
     margin: 25px auto;
-    width: 303px;
-    height: 303px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     background: image-url("../images/netstof_ref.png") 0 0 no-repeat;
 
     @media screen and (max-width: 1024px) {
-      background-position: 0 -303px;
+      background-position: 0 -270px;
     }
 
     &:hover {
-      background-position: 0 -303px;
+      background-position: 0 -270px;
 
     }
   }
 
-  .space {
-    height: 200px;
-    padding-top: 200px;
-  }
-
-  .partner_orestad {
+  .partner_tuba {
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
-    /* ...and now for the proper property */
     transition:.5s;
     display: block;
     margin: 25px auto;
-    width: 303px;
-    height: 303px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
-    background: image-url("../images/orestad_ref.png") 0 0 no-repeat;
+    background: image-url("../images/tuba_ref.png") 0 0 no-repeat;
     
     @media screen and (max-width: 1024px) {
-      background-position: 0 -303px;
+      background-position: 0 -270px;
     }
 
     &:hover {
-      background-position: 0 -303px;
+      background-position: 0 -270px;
+    }
+  }
+
+  .partner_cancer {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    display: block;
+    margin: 25px auto;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: image-url("../images/cancer_ref.png") 0 0 no-repeat;
+    
+    @media screen and (max-width: 1024px) {
+      background-position: 0 -270px;
+    }
+
+    &:hover {
+      background-position: 0 -270px;
+    }
+  }
+
+  .partner_misbrug {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    display: block;
+    margin: 25px auto;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: image-url("../images/misbrug_ref.png") 0 0 no-repeat;
+    
+    @media screen and (max-width: 1024px) {
+      background-position: 0 -270px;
+    }
+
+    &:hover {
+      background-position: 0 -270px;
     }
   }
 }
@@ -583,9 +660,9 @@ nav {
 // PRICER// PRICER// PRICER// PRICER
 
 .price {
-   padding: 192px 0 100px 0;
+   padding: 150px 0 100px 0;
 
-   @media screen and (max-width: 640px) {
+   @media screen and (max-width: 1024px) {
     padding: 50px 0 100px 0;
   }
 
@@ -595,9 +672,9 @@ nav {
    }
 
   .chat_add {
-    margin-top: 120px;
+    margin-top: 70px;
     @media screen and (max-width: 869px) {
-      margin-top: 40px;
+      margin-top: 20px;
     }
   }
 
@@ -644,9 +721,9 @@ nav {
 
 .info_chat {
   width: 100%;
-  padding: 192px 0 100px 0;
+  padding: 150px 0 100px 0;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     padding: 50px 0 100px 0;
   }
 
@@ -727,9 +804,9 @@ nav {
 // CONTACT// CONTACT// CONTACT// CONTACT
 
 .contact {
-  padding: 192px 0 100px 0;
+  padding: 150px 0 100px 0;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     padding: 50px 0 100px 0;
   }
 

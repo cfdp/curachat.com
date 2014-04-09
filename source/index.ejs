@@ -29,7 +29,7 @@
         <!-- NAV-DESKTOP START-->
         <nav class="large-9 columns show-for-large-up" data-magellan-expedition>
           <ul class="desktop">
-            <li data-magellan-arrival="produkt"><a href="#produkt">Produkt</a></li>
+            <li data-magellan-arrival="produkt"><a href="#produkt">Services</a></li>
             <li data-magellan-arrival="team"><a href="#team">Team</a></li>
             <li data-magellan-arrival="partnere"><a href="#partnere">Partnere</a></li>
             <li data-magellan-arrival="priser"><a href="#priser">Priser</a></li>
@@ -43,7 +43,7 @@
         <nav class="large-9 columns hide-for-large-up">
           <div class="right toggle_menu"><a href="#"><span class="icon-toggle_img"></span></a></div>
           <ul class="mobil">
-            <li data-magellan-arrival="produkt"><a href="#produkt">Produkt</a></li>
+            <li data-magellan-arrival="produkt"><a href="#produkt">Services</a></li>
             <li data-magellan-arrival="team"><a href="#team">Team</a></li>
             <li data-magellan-arrival="partnere"><a href="#partnere">Partnere</a></li>
             <li data-magellan-arrival="priser"><a href="#priser">Priser</a></li>
@@ -58,10 +58,8 @@
       <!-- BANNER -->
       <div class="banner cover">
           <div class="row">
-            <div class="large-12 columns">
-              <img class="fade_in_img" src="images/taleboble.svg" alt="taleboble">
-              <div class="text-center"><h1 class="fade_in_h1">Digital rådgivning</h1></div>
-            </div>
+              <div class="text-center small-8 small-centered large-10 large-centered columns"><h1>CuraChat bygger på 10 års praksiserfaring. Vi kalder det nærhed på afstand</h1></div>
+<!--               <img class="large-4 medium-4 columns end"src="images/taleboble.svg" alt="taleboble"> -->
           </div>
       </div>
       <!-- BANNER END -->
@@ -69,8 +67,8 @@
       <!-- SALGSARGUMENTER -->
       <a name="produkt"></a>
       <section data-magellan-destination="produkt" class="sales-arguments">
-        
         <div class="row">
+        <h1>Digital rådgivning</h1>
           <div class="large-4 medium-4 columns">
             <img src="images/platform.svg" alt="Platforme ikon">
             <%- partial("text/_sales-argument-1.md") %>
@@ -87,11 +85,13 @@
             <%- partial("text/_sales-argument-3.md") %>
           </div>
         </div>
+        <div class="arrow_down"><a id='useBtn' class='produkt' href='#produkt'><img src="../images/arrow_down.svg" alt="arrow_down"></a></div>
       </section>
       <!-- SALGSARGUMENTER END -->
 
       <!-- PRODUKT START -->
-      <section class="produkt green">
+
+      <section class="produkt green" id='use' class='produkt'>
         <div class="row">
             <div class="large-12 columns">
               <%- partial("text/_produkt.md") %>
@@ -152,17 +152,28 @@
   
       <div class="row">
         <h1>Partnere</h1>
-        <div class="large-4 columns ">
-          <a class="partner_cyberhus" href="http://www.cyberhus.dk" target="_blank"></a>
-        </div>
 
-        <div class="large-4 columns">
-          <a class="partner_netstof" href="http://www.netstof.dk" target="_blank"></a>
-        </div>
+        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+          <li>
+            <a class="partner_cyberhus" href="http://www.cyberhus.dk" target="_blank"></a>
+          </li>
 
-        <div class="large-4 columns">
-          <div class="partner_orestad"></div>
-        </div>
+          <li>
+            <a class="partner_netstof" href="http://www.netstof.dk" target="_blank"></a>
+          </li>
+
+          <li>
+            <a class="partner_cancer" href="http://www.cancer.dk/" target="_blank"></a>
+          </li>
+
+          <li>
+            <a class="partner_tuba" href="http://www.tuba.dk" target="_blank"></a>
+          </li>
+
+          <li>
+            <a class="partner_misbrug" href="http://www.misbrugsportalen.dk/" target="_blank"></a>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- PARTNERE SLUT -->
@@ -288,7 +299,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="/js/foundation-bower.js"></script>
     <script src="/js/jquery.js"></script>
-
+    <script src="/js/scrolld.min.js"></script>
     <script src="/js/app.js"></script>
 
   </body>

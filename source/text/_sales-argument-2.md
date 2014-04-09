@@ -1,3 +1,4 @@
 ### Pædagogisk værktøj
 
-Udover afstand og anonymitet besidder digital rådgivning en stor styrke i sine alsidige muligheder for deltagelse. 
+Chatten er tilpasset den pædagogiske praksis, ikke 
+omvendt. Som bruger af CuraChat abonnerer du på et produkt, der udvikles løbende.
