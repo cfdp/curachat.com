@@ -29,11 +29,11 @@
         <!-- NAV-DESKTOP START-->
         <nav class="large-9 columns show-for-large-up" data-magellan-expedition>
           <ul class="desktop">
-            <li data-magellan-arrival="services"><a href="#services">Services</a></li>
+            <li data-magellan-arrival="om"><a href="#om">Om CuraChat</a></li>
             <li data-magellan-arrival="team"><a href="#team">Team</a></li>
             <li data-magellan-arrival="partnere"><a href="#partnere">Partnere</a></li>
             <li data-magellan-arrival="priser"><a href="#priser">Priser</a></li>
-            <li data-magellan-arrival="om"><a href="#om">Om CuraChat</a></li>
+            <li data-magellan-arrival="services"><a href="#services">Services</a></li>
             <li data-magellan-arrival="kontakt"><a href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
@@ -43,11 +43,11 @@
         <nav class="large-9 columns hide-for-large-up">
           <div class="right toggle_menu"><a href="#"><span class="icon-toggle_img"></span></a></div>
           <ul class="mobil">
-            <li data-magellan-arrival="services"><a href="#services">Services</a></li>
+            <li data-magellan-arrival="om"><a href="#om">Om CuraChat</a></li>
             <li data-magellan-arrival="team"><a href="#team">Team</a></li>
             <li data-magellan-arrival="partnere"><a href="#partnere">Partnere</a></li>
             <li data-magellan-arrival="priser"><a href="#priser">Priser</a></li>
-            <li data-magellan-arrival="om"><a href="#om">Om CuraChat</a></li>
+            <li data-magellan-arrival="services"><a href="#services">Services</a></li>
             <li data-magellan-arrival="kontakt"><a href="#kontakt">Kontakt</a></li>
 
           </ul>
@@ -65,25 +65,25 @@
       </div>
       <!-- BANNER END -->
 
-      <!-- SERVICES START -->
-      <a name="services"></a>
-      <section data-magellan-destination="services" class="services">
+      <!-- OM CURA START -->
+      <a name="om"></a>
+      <section data-magellan-destination="om" class="om">
         <div class="row">
-        <h1>Digital rådgivning</h1>
+        <h1>Om CuraChat</h1>
           <div class="large-4 medium-4 columns">
             <img src="images/platform.svg" alt="Platforme ikon">
-            <%- partial("text/_services1.md") %>
+            <%- partial("text/_om1.md") %>
           </div>
 
 
           <div class="large-4 medium-4 columns">
             <img src="images/heart.svg" alt="Hjerte ikon">
-            <%- partial("text/_services2.md") %>
+            <%- partial("text/_om2.md") %>
           </div>
 
           <div class="large-4 medium-4 columns">
             <img src="images/lock.svg" alt="Hængelås ikon">
-            <%- partial("text/_services3.md") %>
+            <%- partial("text/_om3.md") %>
           </div>
         </div>
 
@@ -100,7 +100,7 @@
             </div>
           </div>
       </section>
-      <!-- SERVICES SLUT -->
+      <!-- OM CURA -->
 
       <!-- TEAM -->
        <a name="team"></a>
@@ -191,15 +191,15 @@
 
     <!-- PRICES END -->
 
-    <!-- INFO OM CHATTEN -->
+    <!-- SERVICES -->
 
-    <a name="om"></a>
-    <section data-magellan-destination="om" class="info_chat sec-blue">
+    <a name="services"></a>
+    <section data-magellan-destination="services" class="info_chat sec-blue">
     
       <div class="row">
 
         <div class="large-12 columns">
-          <%- partial("text/_info_chat.md") %>
+          <%- partial("text/_info_chat_header.md") %>
         </div>
       </div>
 
@@ -220,7 +220,7 @@
 
     </section>
 
-    <!-- INFO OM CHATTEN END -->
+    <!-- INFO SERVICES END -->
 
     <!-- KONTAKT START -->
 
