@@ -56,7 +56,7 @@
       </div>
     </header>
     
-      <div class="sendt">
+      <div class="send">
         <h1>Tak for din henvendelse</h1>
         <br>
         <p>Vi vil kontakte dig hurtigst muligt</p>
