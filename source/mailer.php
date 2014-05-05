@@ -14,7 +14,7 @@ $phone = $_POST['phone'];
 $msg = $_POST['msg'];
  
 
-if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+if(!filter_var($mail, FILTER_VALIDATE_EMAIL))
   {
     header('Location: fejl.php');
 }
