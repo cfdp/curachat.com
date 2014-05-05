@@ -790,6 +790,13 @@ nav {
       }
     }
 
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     img {
       float: right;
 

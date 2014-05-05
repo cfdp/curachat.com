@@ -1,5 +1,3 @@
-### Kan integreres overalt.
+### Fagligt netværk.
 
-Selve indgangen til chatten kan let tilføjes jeres website, ligegyldigt hvilket system I bruger. Det eneste som kræves, er at I indsætter en stump kode, som vi giver jer. Den henter og viser login-formularen for jeres brugere, når I åbner chatten. 
-
-Login-vinduet kan tilpasses jeres visuelle identitet, så det kommer til at indgå som en naturlig del af jeres website.
+CuraChat er ikke blot et produkt, men i høj grad et dynamisk værktøj skabt i tæt samarbejde med brugerne, og det personale som rådgiver og vejler brugerne. Et værktøj som hele tiden skal udvikles og tilpasses det sociale arbejde. Derfor bliver du medskaber af CuraChat. Vi afholder løbende workshops for alle partnere. Her deler vi viden og erfaring, som kan sikre både en teknisk og personfaglig udvikling. 
