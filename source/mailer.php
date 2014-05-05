@@ -7,7 +7,7 @@ if(empty($_POST['name'])  ||
    header('Location: fejl.php');
 }
 
-$myemail = 'emilankersen88@gmail.com';
+$myemail = 'anni@cfdp.com';
 $mail = $_POST['mail'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -22,7 +22,7 @@ if(!filter_var($mail, FILTER_VALIDATE_EMAIL))
 else {
 
 	$to = $myemail; 
-	$email_subject = "Henvendelse fra CuraChat.com";
+	$email_subject = "Henvendelse på CuraChat.com";
 	$email_body ="Navn: $name \n\n Email: $mail \n\n Telefon: $phone \n\n Besked: \n\n $msg";
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $mail";
