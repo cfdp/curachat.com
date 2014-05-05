@@ -838,6 +838,28 @@ nav {
   }
 }
 
+// MAILER
+
+.fejl {
+  padding-top: 120px;
+  text-align: center;
+
+  a {
+    background: tomato;
+    color: #fff;
+  }
+}
+
+.send {
+  padding-top: 120px;
+  text-align: center;
+
+  a {
+    background: $green;
+    color: #fff;
+  }
+} 
+
 // FOOTER// FOOTER// FOOTER// FOOTER
 
 footer {

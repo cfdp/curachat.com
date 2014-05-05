@@ -61,7 +61,7 @@
         <br>
         <p>Vi vil kontakte dig hurtigst muligt</p>
         <br><br>
-        <a href="index.php">Tilbage</a> 
+        <a href="index.html">Tilbage</a> 
       </div>
       
 

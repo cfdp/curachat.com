@@ -61,7 +61,7 @@
         <br>
         <p>Tjek venligst din email, og prøv igen</p>
         <br><br>
-        <a href="index.php">Tilbage</a> 
+        <a href="index.html">Tilbage</a> 
       </div>
   </div>
   <!-- CONTAINER END -->
