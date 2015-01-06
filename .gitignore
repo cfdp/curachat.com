@@ -1,4 +1,5 @@
 www
+node_modules
 .ruby-version
-
+.sass-cache
 .DS_store

@@ -7,7 +7,7 @@ if(empty($_POST['name'])  ||
    header('Location: fejl.php');
 }
 
-$myemail = 'anni@cfdp.com';
+$myemail = 'tech@cfdp.dk';
 $mail = $_POST['mail'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
